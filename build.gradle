@@ -1,0 +1,31 @@
+plugins {
+    id 'application'
+    id 'java'
+}
+
+wrapper {
+    gradleVersion = '6.4'
+    distributionType = Wrapper.DistributionType.ALL
+}
+
+group = 'com.github.netomi'
+version = '0.1'
+
+repositories {
+    jcenter()
+}
+
+sourceCompatibility = "1.8"
+targetCompatibility = "1.8"
+
+mainClassName = 'com.github.netomi.destringer.Destringer'
+
+sourceSets.main {
+    java {
+        srcDirs = ['src']
+    }
+}
+
+dependencies {
+    compile "com.guardsquare:proguard-core:7.0.0"
+}
