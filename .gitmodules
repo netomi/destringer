@@ -1,3 +1,0 @@
-[submodule "proguard-core"]
-	path = proguard-core
-	url = git@github.com:Guardsquare/proguard-core.git

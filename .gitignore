@@ -3,4 +3,3 @@
 build/
 
 gradle.properties
-proguard-core

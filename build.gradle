@@ -26,6 +26,16 @@ sourceSets.main {
     }
 }
 
+jar {
+    manifest {
+        attributes "Main-Class": mainClassName
+    }
+
+    from {
+        configurations.compile.collect { it.isDirectory() ? it : zipTree(it) }
+    }
+}
+
 dependencies {
     compile "com.guardsquare:proguard-core:7.0.0"
 }
