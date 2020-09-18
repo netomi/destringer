@@ -7,7 +7,7 @@ A simple proof-of-concept to deobfuscate jar files protected by [Stringer](https
 You can use the tool on the command-line like that:
 
 ```shell script
-./gradlew run --args "obfuscated.jar deobfuscated.jar
+./gradlew run --args "obfuscated.jar deobfuscated.jar"
 ```
 
 It will print the strings it could decrypt and store the result in the file ```deobfuscated.jar```.
